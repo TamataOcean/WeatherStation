@@ -10,6 +10,29 @@
 - Log activities
 - Control & Alert System to send alert (color, temperature, light from standard deviation) 
 
+## Install save_data.js as a service
+#### Into : /lib/systemd/system 
+     [Unit]
+      Description=TamataWeatherStation
+      After=multi-user.target
+
+      [Service]
+      WorkingDirectory=/home/pi/code/WeatherStation/systools
+      ExecStart=/usr/bin/node save_data.js
+      Restart=on-failure
+
+      [Install]
+      WantedBy=multi-user.target
+
+#### Declare service  
+      sudo systemctl enable tamata_weatherstation.service  
+
+#### Start service  
+      sudo systemctl start tamata_weatherstation.service  
+
+#### Log Service
+      sudo journalctl -u tamata_weatherstation.service 
+
 ## Buy us a beer!
 
 This FLOSS software is funded by donations only. Please support us to maintain and further improve it!
