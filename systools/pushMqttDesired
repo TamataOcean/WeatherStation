@@ -1,1 +1,0 @@
-mosquitto_pub -t '$aws/things/6001941D9FAA/shadow/update/delta' -f ./mqttDesired 
