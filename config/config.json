@@ -1,19 +1,15 @@
 {
-    "AppName": "TamataSpiru",
-    "Version": "1.1.0",
+    "AppName": "Tamata WeatherStation",
+    "Version": "1.0.0",
     "Copyright": "Copyright Open Source - W3Licence",
-    "alert_tel": "+33 6 12 45 78 96",
-    "alert_email": "contact@tamataocean.Com",
     "system": {
         "user": "WeatherStation",
         "id": "WeatherStation",
         "mac": "2C3AE84FBE28",
-        "lastupdate": "2019-02-08T20:51:19Z",
         "interval": 10,
         "console": "",
         "mqttServer": "localhost",
         "mqttTopic": "$aws/things/2C3AE84FBE28/shadow",
-        "httpDashboard": "http://geopoppy.local:3000/d/BdnP6wmRz/data-spiru?orgId=1&from=1540744402674&to=1540917202674",
         "influxDB": {
             "database": "dataweather",
             "host": "localhost",
