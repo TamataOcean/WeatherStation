@@ -1,16 +1,19 @@
-# TamataWeather Station with Cool Co Board to manage dat environment (Temperature, Atmospheric Pressure, UV, IR, Light, Humidity )
-## Data Collecting from sensors.
+## TamataWeather Station with CoolCo Board, using grafana, influxdb & mosquitto 
+
+![CoolCo_Weather_Station](https://user-images.githubusercontent.com/25310798/71003236-0b726c00-20e1-11ea-80fb-34e6f4bc5d11.jpg)
+
+### Data Collecting from sensors.
 - Temperature In/Out  
 - Atmospheric Pressure  
 - Light intensity, UV, IR, 
 - Transfert data by JSON export.  
 
-## System task Scheduling.
+### System task Scheduling.
 - Control & Reporting
 - Log activities
 - Control & Alert System to send alert (color, temperature, light from standard deviation) 
 
-## Install save_data.js as a service
+### Install save_data.js as a service
 #### Into : /lib/systemd/system 
      [Unit]
       Description=TamataWeatherStation
